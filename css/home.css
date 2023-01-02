@@ -42,7 +42,7 @@ nav{
 .slide-controllers{
 	display: flex;
 	align-items: center;
-	margin: 4vh auto 4vh auto;
+	margin: 4vh auto;
 	font-size: 2rem;
 	justify-content: center;
 }
