@@ -45,6 +45,7 @@ nav{
 	align-items: center;
 	margin-top: -10vh;
 	font-size: 2rem;
+	border: 2px solid #30e3ca;
 }
 
 .slide-controllers .controller{
@@ -122,6 +123,11 @@ header{
 	display: block;
 }
 
+
+#clear{
+	clear:both;
+}
+
 @media (max-width:720px){
 	.slides{
 		margin: 5vh auto;
@@ -137,5 +143,10 @@ header{
 	.specs{
 		margin-top: 10vh;
 		color: gray;
+	}
+	
+	.slide-controllers{
+		float: none;
+		margin: 1vh auto;
 	}
 }
