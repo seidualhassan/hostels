@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="semantic/semantic.min.css"/>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="showcase">
+			<nav>
+				<div class="brand-name"> Hostels </div>
+			</nav>
+
+			<header> Affordable private hostels arround Legon. </header>
+			
+			<div class="social-media">
+				<a href="#"><i class="facebook f icon"></i></a>
+				<a href="#"><i class="linkedin icon"></i></a>
+				<a href="#"><i class="twitter icon"></i>
+				<a href="#"><i class="youtube icon"></i></a>
+				<a href="#"><i class="instagram icon"></i></a>
+			</div>
+
+			<div class="slides">
+				<div class="slide-1 slide">
+					<img src="images/img (1).jpg" alt="Sandcity Hostel"/>
+					<div class="description"> 
+						<p> <span style="color: red;">Sandcity Hostel</span> is located in the heart of East Legon. Students of Meltwater and other universities call this hostel home. </p>
+					</div>
+				</div>
+				
+				<div class="slide-2 slide">
+					<img src="images/img (2).jpg" alt="Spring Walden Hostel"/>
+					<div class="description"> 
+						<p> <span style="color: red;">Spring Walden Hostel</span> is located in Accra and is suittable for female students at the University of Ghana Legon, and Wisconsin. </p>
+					</div>
+				</div>
+				
+				<div class="slide-3 slide">
+					<img src="images/img (3).jpg" alt="Benzee Hostel"/>
+					<div class="description"> 
+						<p> <span style="color: red;">Benzee Hostel</span> is a well-furnished hostel with many rooms for students. It is located in East Legon and is normally known as Benzee Residency. The rooms are spacious with a toilet and bath within the rooms. </p>
+					</div>
+				</div>
+				
+				<div class="slide-4 slide">
+					<img src="images/img (4).jpg" alt="Aseda Hostel"/>
+					<div class="description"> 
+						<p> <span style="color: red;">Aseda Hostel</span> is located in North Legon very close to the University of Ghana. It is open to all students and travellers. Students of Wisconsin, UPSA, and other nearby Universities like to call this place home. </p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="slide-controllers">
+				<div class="previous controller"><i class="angle left icon"></i></div>
+				<div class="next controller"><i class="angle right icon"></i></div>
+			</div>
+			
+			<div id="clear"></div>
+
+			<div class="specs">
+				<div>
+					<i class="money bill alternate outline icon"></i>
+					<h3> Easy Payments </h3>
+				</div>
+
+				<div>
+					<i class="map marker alternate icon"></i>
+					<h3> Great Location </h3>
+				</div>
+
+				<div>
+					<i class="motorcycle icon"></i>
+					<h3> Modern Design</h3>
+				</div>
+
+				<div>
+					<i class="motorcycle icon"></i>
+					<h3> Parking Spaces </h3>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="jquery.js"></script>
+    	<script src="semantic/semantic.min.js"></script>
+    	<script>
+			$(document).ready(function(){
+				let slideNo = 1;
+		
+		
+				$(".previous").click(function(){
+					if(slideNo == 1){
+						slideNo = 4
+					}else{
+						slideNo = slideNo -1;
+					}
+					
+					$(".slide").css("display", "none");
+					var slideItem = ".slide-" + slideNo;
+					$(slideItem).css("display", "block");
+				});
+				
+				$(".next").click(function(){
+					if(slideNo == 4){
+						slideNo = 1;
+					}else{
+						slideNo = slideNo +1;
+					}
+					
+					$(".slide").css("display", "none");
+					var slideItem = ".slide-" + slideNo;
+					$(slideItem).css("display", "block");
+				});
+			});
+		</script>
+</body>
