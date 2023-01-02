@@ -1,0 +1,122 @@
+.wrapper{
+	width: 100%;
+	min-height: 100vh;
+}
+
+.showcase{
+	width: 100%;
+	height: 100vh;
+}
+
+nav{
+	padding: 1rem;
+	width: 100%;
+	min-height: 5vh;
+}
+
+.brand-name{
+	font-weight: bold;
+	font-size: 1.3rem;
+}
+
+.social-media{
+	width: 60%;
+	margin: 5vh auto 0 auto;
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-media a,
+.social-media a:active,
+.social-media a:visited{
+	color: white;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+	margin: 0 1rem;
+	background-color: black;
+}
+
+.slide-controllers{
+	float: right;
+	display: flex;
+	align-items: center;
+	margin-top: -10vh;
+	font-size: 2rem;
+}
+
+.slide-controllers .controller{
+	padding: 1rem;
+	transition: 0.3s ease-in;
+	cursor: pointer;
+}
+
+.slide-controllers .previous{
+	background-color: #30e3ca;
+	color: white;
+}
+
+.slide-controllers .next{
+	color: #30e3ca;
+	background-color: white;
+}
+
+.slide-controllers .controller:hover{
+	transition: 0.3s ease-in;
+	background-color: gray;
+	color: white;
+}
+
+.specs{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+	margin-top: 40vh;
+	color: gray;
+}
+
+.specs div{
+	text-align: center;
+	padding: 2rem;
+}
+
+.specs div i{
+	font-size: 5rem;
+}
+
+header{
+	font-size: 2rem;
+	margin: 10vh auto 0 auto;
+	text-align: center;
+}
+
+.slides{
+	margin: 10vh auto;
+	width: 70%;
+}
+
+.slide{
+	width: 700px;
+	margin: 5vh auto;
+	border: 1px solid red;
+	padding: 0.5rem;
+	text-align: center;
+	display: none;
+}
+.slide img{
+	max-width: 100%;
+}
+
+.slide .description{
+	margin: 3vh auto;
+	width: 70%;
+	line-height: 1.6;
+	text-align: left;
+	font-size: 1.3rem;
+}
+
+.slide-1{
+	display: block;
+}
