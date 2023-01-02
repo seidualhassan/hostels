@@ -100,7 +100,8 @@ header{
 .slide{
 	width: 700px;
 	margin: 5vh auto;
-	border: 1px solid red;
+	border: 2px solid rgba(0,0,0,0.5);
+	border-radius: 4px;
 	padding: 0.5rem;
 	text-align: center;
 	display: none;
@@ -119,4 +120,17 @@ header{
 
 .slide-1{
 	display: block;
+}
+
+@media (max-width:720px){
+	.slides{
+		margin: 5vh auto;
+		width: 95%;
+	}
+	
+	.slide{
+		width: 100%;
+		margin: 5vh auto;
+		padding: 1rem;
+	}
 }
