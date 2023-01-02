@@ -40,11 +40,11 @@ nav{
 }
 
 .slide-controllers{
-	float: right;
 	display: flex;
 	align-items: center;
-	margin-top: -10vh;
+	margin: 4vh auto 4vh auto;
 	font-size: 2rem;
+	justify-content: center;
 }
 
 .slide-controllers .controller{
@@ -145,8 +145,4 @@ header{
 		color: gray;
 	}
 	
-	.slide-controllers{
-		float: none;
-		margin: 1vh auto;
-	}
 }
