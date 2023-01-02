@@ -100,7 +100,7 @@ header{
 .slide{
 	width: 700px;
 	margin: 5vh auto;
-	border: 2px solid rgba(0,0,0,0.5);
+	border: 1rem solid rgba(0,0,0,0.3);
 	border-radius: 4px;
 	padding: 0.5rem;
 	text-align: center;
@@ -132,5 +132,10 @@ header{
 		width: 100%;
 		margin: 5vh auto;
 		padding: 1rem;
+	}
+	
+	.specs{
+		margin-top: 10vh;
+		color: gray;
 	}
 }
